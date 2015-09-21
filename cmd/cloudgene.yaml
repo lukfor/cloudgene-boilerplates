@@ -1,0 +1,27 @@
+name: Commandline boilerplate
+description:  Simple Boilerplate for a command-line workflow
+version: 0.0.1
+website: http://cloudgene.uibk.ac.at
+category: cloudgene
+
+mapred:
+
+  steps:
+
+    - name: Write message to a text file using a shell script
+      exec: /bin/bash hello-world.sh "$text" ${output}.txt
+
+  inputs:
+    - id: text
+      description: Enter some text
+      type: text
+      value: Hello-World
+
+  outputs:
+    - id: output
+      description: Output-File
+      type: local-file
+      download: true
+      temp: false
+      zip: false
+      mergeOutput: false
