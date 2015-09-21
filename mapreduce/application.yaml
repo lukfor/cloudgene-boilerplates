@@ -1,0 +1,7 @@
+name: boilerplates/mapreduce
+description: Boilerplate for a mapreduce java programm (Hadoop MRv1).
+maintainer: Boilerplate
+dependencies: cloudgene-MRv1
+version: 0.0.4
+contents: target/mapreduce-0.0.1-assembly
+workflows: cloudgene.yaml
