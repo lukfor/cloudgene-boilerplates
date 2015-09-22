@@ -2,7 +2,10 @@
 a collection of cloudgene boilerplates
 
 ## boilerplates/cmd
-A boilerplate for a cloudgene application that contains a workflow with several command-line programs.
+Boilerplate for workflow with command-line programs.
 
 ## boilerplates/mapreduce
-A boilerplate for a cloudgene application that contains a MapReduce workflow.
+Boilerplate for MapReduce workflow.
+
+## boilerplates/cloudflow
+Boilerplate for a Cloudflow pipeline.
