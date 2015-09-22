@@ -1,6 +1,6 @@
 name: boilerplates/cmd
 description: Simple Boilerplate for a command-line workflow
 maintainer: Boilerplate
-dependencies: cloudgene-MRv1
+dependencies: no dependencies
 version: 0.0.1
 workflows: cloudgene.yaml

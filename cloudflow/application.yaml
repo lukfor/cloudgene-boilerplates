@@ -1,0 +1,7 @@
+name: boilerplates/cloudflow
+description: Boilerplate for Cloudflow pipelines
+maintainer: Boilerplate
+dependencies: cloudgene-MRv1
+version: 0.0.4
+contents: target/cloudflow-boilerplate-0.5.0-hadoop
+workflows: cloudgene.yaml
