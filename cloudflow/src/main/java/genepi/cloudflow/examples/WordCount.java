@@ -3,13 +3,15 @@ package genepi.cloudflow.examples;
 import java.io.IOException;
 
 import cloudflow.core.Pipeline;
+import cloudflow.core.hadoop.MapReduceRunner;
 import cloudflow.core.operations.Transformer;
 import cloudflow.core.records.IntegerRecord;
 import cloudflow.core.records.TextRecord;
 
 public class WordCount {
 
-	public static class LineToWords extends Transformer<TextRecord, IntegerRecord> {
+	public static class LineToWords extends
+			Transformer<TextRecord, IntegerRecord> {
 
 		private IntegerRecord out = new IntegerRecord();
 
@@ -34,7 +36,8 @@ public class WordCount {
 
 		Pipeline pipeline = new Pipeline("WordCount", WordCount.class);
 		pipeline.loadText(input).apply(LineToWords.class).sum().save(output);
-		pipeline.run();
+
+		new MapReduceRunner().run(pipeline);
 
 	}
 }

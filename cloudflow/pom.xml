@@ -15,14 +15,10 @@
 	</properties>
 
 	<repositories>
-		<repository>
-			<id>cloudflow</id>
-			<url>https://raw.github.com/genepi/maven/cloudflow</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
+       <repository>
+            <id>genepi-maven</id>
+            <url>https://raw.github.com/genepi/maven-repository/mvn-repo/</url>
+        </repository>
 	</repositories>
 
 	<dependencies>
@@ -35,7 +31,7 @@
 		<dependency>
 			<groupId>genepi</groupId>
 			<artifactId>cloudflow</artifactId>
-			<version>0.5.0</version>
+			<version>0.6.0</version>
 		</dependency>
 	</dependencies>
 
