@@ -4,22 +4,22 @@ A boilerplate for a cloudgene application that contains a MapReduce workflow.
 
 This is a minimal and ready-to-run application which can be used to start your own projects.
 
-A new cloudgene appliation based on this boilerplate can be created by typing the following command:
-
 ```
-cgapps init --app myapp --boilerplate mapreduce
+git clone https://github.com/lukfor/cloudgene-boilerplates
 ```
 
-This command creates a folder myapp which contains all needed files.
-
-Navigate in that folder and use maven do package your java mapreduce program:
+Next, you have to import the project into Eclipse or you can execute maven to build the jar file:
 
 ```
+cd cloudgene-boilerplates/mapreduce
 mvn package
 ```
 
-Finally, use the test command to test your application using Docker:
+
+Finally, use Docker to test your application:
 
 ```
-cgapps test
+sudo docker run --privileged -it -p 8082:8082 -v $(pwd)/target/:/opt/cloudgene/apps/ seppinho/cloudgene-docker
 ```
+
+Open http://127.0.0.1:8082 to see your application in action.
