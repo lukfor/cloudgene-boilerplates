@@ -8,7 +8,7 @@ This is a minimal and ready-to-run application which can be used to start your o
 git clone https://github.com/lukfor/cloudgene-boilerplates
 ```
 
-Next, navigate to cmd example folder:
+Next, navigate to cmd folder:
 ```
 cd cmd
 ```
