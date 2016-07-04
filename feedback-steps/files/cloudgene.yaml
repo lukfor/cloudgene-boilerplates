@@ -1,0 +1,32 @@
+name: Feedback Step
+description: Example for custom steps.
+version: 1.0
+website: 
+category: Genepi Hadoop Examples
+
+mapred:
+
+  steps:
+
+    - name: Waiting Step
+      classname: steps.WaitingStep
+      jar: feedback-step.jar
+
+
+  inputs:
+
+    - id: seconds
+      description: Sleep (seconds)
+      value: 15
+      type: number
+
+  outputs:
+
+    - id: output
+      description: Output
+      type: hdfs-folder
+      removeHeader: false
+      download: true
+      temp: true
+      zip: false
+      mergeOutput: false
