@@ -4,10 +4,21 @@ A boilerplate for a cloudgene application that contains a workflow with several 
 
 This is a minimal and ready-to-run application which can be used to start your own projects.
 
-A new cloudgene appliation based on this boilerplate can be created by typing the following command:
-
 ```
-cgapps init --app myapp --boilerplate boilerplates/cmd
+git clone https://github.com/lukfor/cloudgene-boilerplates
 ```
 
-This command creates a folder myapp which contains all needed files.
+Next, navigate to cmd example folder:
+```
+cd cmd
+```
+
+
+Finally, use Docker to test your application:
+
+```
+sudo docker run --privileged -it -p 8082:8082 -v $(pwd)/src/:/opt/cloudgene/apps/ seppinho/cloudgene-docker
+```
+
+Open http://127.0.0.1:8082 to see your application in action.
+
